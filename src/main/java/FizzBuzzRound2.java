@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 /**
  * Created by vasilis on 16-5-17.
  */
@@ -7,33 +12,23 @@ public class FizzBuzzRound2 {
     public static String BUZZ = "Buzz";
     public static String FIZZBUZZ = "FizzBuzz";
 
-    public static String getResult(Integer value){
-        if(isDividableByThree(value))
-            return FIZZ;
-        else if(isDividableByFive(value))
-            return BUZZ;
-        else if(isDividableByBoth(value))
-            return FIZZBUZZ;
-        return value.toString();
-    }
-    public static boolean isDividableByThree(Integer value){
-        if(value % 3 == 0){
-            return true;
-        }
-        return false;
-    }
 
-    public static boolean isDividableByFive(Integer value){
-        if(value % 5 == 0){
-            return true;
-        }
-        return false;
-    }
+    public static String getResult(Integer dividend) {
+        Map<Integer, String> dividingCases = new LinkedHashMap<Integer, String>();
+        dividingCases.put(15, FIZZBUZZ);
+        dividingCases.put(5, BUZZ);
+        dividingCases.put(3, FIZZ);
 
-    public static boolean isDividableByBoth(Integer value){
-        if(value % 15 == 0){
-            return true;
+        Iterator casesIterator = dividingCases.entrySet().iterator();
+        while(casesIterator.hasNext()){
+            Map.Entry pair = (Map.Entry)casesIterator.next();
+            if(isDividable(dividend,Integer.parseInt(pair.getKey().toString()))){
+                return pair.getValue().toString();
+            }
         }
-        return false;
+        return "";
+    }
+    public static boolean isDividable(Integer dividend, Integer divisor) {
+        return dividend % divisor == 0;
     }
 }
