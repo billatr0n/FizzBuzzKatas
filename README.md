@@ -1,7 +1,9 @@
-#FizzBuzz Daily Katas
-Kata (型 or 形 literally: "form"?), a Japanese word, are detailed choreographed patterns of movements practised either solo or in pairs. The term form is used for the corresponding concept in non-Japanese martial arts in general.
+# FizzBuzz Daily Katas
+[![Build Status](https://travis-ci.org/billatr0n/FizzBuzzKatas.svg?branch=master)](https://travis-ci.org/billatr0n/FizzBuzzKatas)
 
-#####A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition. The term was probably first coined by Dave Thomas, co-author of the book The Pragmatic Programmer,[1] in a bow to the Japanese concept of kata in the martial arts. As of October 2011, Dave Thomas has published 21 different katas.[2]
+**_Kata_** (型 or 形 literally: "form"?), a Japanese word, are detailed choreographed patterns of movements practised either solo or in pairs. The term form is used for the corresponding concept in non-Japanese martial arts in general.
+
+##### A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition. The term was probably first coined by Dave Thomas, co-author of the book The Pragmatic Programmer,[1] in a bow to the Japanese concept of kata in the martial arts. As of October 2011, Dave Thomas has published 21 different katas.[2]
 
 
 
