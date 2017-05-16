@@ -1,7 +1,7 @@
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import static java.lang.Math.floorMod;
 
 /**
  * Created by vasilis on 16-5-17.
@@ -11,6 +11,7 @@ public class FizzBuzzRound2 {
     public static String FIZZ = "Fizz";
     public static String BUZZ = "Buzz";
     public static String FIZZBUZZ = "FizzBuzz";
+
 
 
     public static String getResult(Integer dividend) {
@@ -29,6 +30,6 @@ public class FizzBuzzRound2 {
         return dividend.toString();
     }
     public static boolean isDividable(Integer dividend, Integer divisor) {
-        return dividend % divisor == 0;
+        return floorMod(dividend,divisor) == 0;
     }
 }
