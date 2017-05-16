@@ -26,7 +26,7 @@ public class FizzBuzzRound2 {
                 return pair.getValue().toString();
             }
         }
-        return "";
+        return dividend.toString();
     }
     public static boolean isDividable(Integer dividend, Integer divisor) {
         return dividend % divisor == 0;
